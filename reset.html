@@ -32,22 +32,20 @@
             border: 1px solid #ccc;
             border-radius: 4px;
         }
-        form input[type="submit"] {
+        form .reset-button {
+            display: block;
             width: 100%;
             background: rgb(128, 47, 0);
             color: white;
-            border: none;
+            text-align: center;
             padding: 10px;
             border-radius: 4px;
-            cursor: pointer;
+            text-decoration: none;
             font-size: 16px;
+            margin-top: 10px;
         }
-        form input[type="submit"]:hover {
+        form .reset-button:hover {
             background: #5a2d82;
-        }
-        p {
-            text-align: center;
-            margin: 10px 0;
         }
     </style>
 </head>
@@ -57,7 +55,7 @@
         <input type="password" name="old_password" placeholder="Old Password" required><br>
         <input type="password" name="new_password" placeholder="New Password" required><br>
         <input type="password" name="confirm_password" placeholder="Confirm Password" required><br>
-        <input type="submit" value="Reset Password">
+        <a href="sub.html" class="reset-button">Reset Password</a>
     </form>
 </body>
 </html>
