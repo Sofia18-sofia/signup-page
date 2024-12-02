@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: purple;
+            margin-top: 20px;
+        }
+        form {
+            width: 300px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form input[type="text"],
+        form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        form label {
+            font-size: 14px;
+        }
+        form input[type="submit"] {
+            width: 100%;
+            background: rgb(214, 96, 178);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        form input[type="submit"]:hover {
+            background: #a768de;
+        }
+        form a {
+            color: rgb(224, 71, 224);
+            text-decoration: none;
+        }
+        form a:hover {
+            text-decoration: underline;
+        }
+        p {
+            text-align: center;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login Form</h1>
+    <form>
+        <input type="text" name="email" placeholder="Enter Email Address" required><br>
+        <input type="password" name="password" placeholder="Enter Password" required><br>
+        <input type="checkbox" id="remember">
+        <label for="remember">Remember me</label>
+        <a href="reset.html" style="float: right;">Forgot password?</a><br><br>
+        <input type="submit" value="Login">
+        <p>Not a member? <a href="Signup.html">Sign up now</a></p>
+    </form>
+</body>
+</html>
