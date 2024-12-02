@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            margin-top: 20px;
+        }
+        p {
+            text-align: center;
+            margin: 5px 0;
+        }
+        form {
+            width: 300px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form input[type="text"],
+        form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        form label {
+            font-size: 14px;
+        }
+        form input[type="submit"] {
+            width: 100%;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        form input[type="submit"]:hover {
+            background: #45a049;
+        }
+        .social-login {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-login img {
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .social-login img:hover {
+            transform: scale(1.1);
+        }
+        .signin-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .signin-link a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .signin-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <p>Sign up to continue</p>
+    <form>
+        <input type="text" name="firstname" placeholder="First Name" required><br>
+        <input type="text" name="lastname" placeholder="Last Name" required><br>
+        <input type="text" name="email" placeholder="Email" required><br>
+        <input type="password" name="password" placeholder="Password" required><br>
+        <input type="checkbox" id="terms">
+        <label for="terms">I agree to the terms and conditions</label><br><br>
+        <input type="submit" value="Sign Up">
+    </form>
+
+    <div class="signin-link">
+        <p>Already have an account? <a href="login.html">Sign in</a></p>
+    </div>
+
+    <div class="social-login">
+        <p>Or continue with</p>
+        <!-- Corrected order of images -->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRltYFb883WrThnsdFJtQa2pi2_9HTcd9USDw&s" width="50" alt="Google">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGMlHvOWVKfzAb8wOGqV6Z6YwaElHNI3Xo3w&s" width="50" alt="Facebook">
+        <img src="https://st4.depositphotos.com/14953852/31639/v/450/depositphotos_316396820-stock-illustration-18-october-2019-minsk-belarus.jpg" width="50" alt="Apple">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRefp5zJiPL_xXRdWg1L37sTjpiFl-8ZVn5gw&s" width="50" alt="Twitter">
+    </div>
+</body>
+</html>
